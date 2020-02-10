@@ -5,6 +5,22 @@
     <head>
         <meta charset="UTF-8">
         <title> Portfolio </title>
+        <style>
+            body {background-color: rgb(248, 246, 241);}
+            h1 {color: rgb(110, 77, 4);font-weight: 200; font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 50px;}
+            h2 {color: rgb(10, 56, 4); background-color: #F4AC13; padding: 1,4; text-align: center;padding: 10;}
+            p {color: #C4D01C; font-size: 30px ; text-align: justify; padding: 3px;}
+            a {color: #F4AC13;  }
+            .lista1 {color: #F4AC13; font-size: 20px; margin: 2px 2px 2px; padding: 2px 2px 2px 2px;}
+            .lista4 {color:#F4AC13; font-size: 20px}
+            #foto {border-radius: 100%; display: inline;}
+            #button {background-color: blueviolet; border: chartreuse; padding: 10 10 10 10; margin: 15 15 15 15; border-radius: 5px; border-width: 5px;
+             display: inline-block; }
+            
+
+
+
+        </style>
     </head>
     
     <body>
@@ -14,28 +30,30 @@
         
         <h1>Fabiano Emiliano Antonio Martins dos Santos</h1>
     
-        <ul>
-            <li><a href=#Parte1>Quem sou eu</a></li>
-            <li><a href=#Parte2>O que faço bem</a></li>
-            <li><a href=#Parte3>Uma recomedação para você</a></li>
+        <ul class="lista1">
+            <li class="lista1"><a href=#Parte1>Quem sou eu</a></li> <br>
+            <li class="lista1"><a href=#Parte2>O que faço bem</a></li> <br>
+            <li class="lista1"><a href=#Parte3>Uma recomedação para você</a></li>
         </ul>
     
     
         <h2 id="Parte1">Quem sou eu</h2>
         <img src="images/foto.jpeg"  width="300" id="foto">
     
-        <p > Olá, sou do interior de minas, moro em Floripa, vim para cá a primeira vez em 2016 e a segunda em 2019.<br>
-        Sou apaixonado por música eletrônica, especificante techno e house progressivo. No momento estou aprendendo a mixar e em breve espero tocar
-        nos maiores festivais do mundo. Kkkkkkk.
+        <p > Olá, sou do interior de minas, moro em Floripa, vim para cá a primeira vez em 2016 e a segunda em 2019.</p>
+        <p>No ano passado, ao voltar de um tempo na Austrália e me deparar com a dificuldade de voltar para o mercado como Engenheiro Químico, decidi
+            me aveturar no mundo da tecnologia.</p>  
+        <p>Sou apaixonado por música eletrônica, especificante techno e house progressivo. No momento estou aprendendo a mixar, um hoby que descobri e que
+            um dia que sabe toco em alguma festa :).</p>
         
         </p>
     
-        <h2 id="Parte2">O que gosto faço bem</h2>
+        <h2 id="Parte2">O que faço bem</h2>
     
         <p>Sempre me considerei uma pessoa com habilidade em aprender fácil, porém desde que comecei na Trybe passei a <em>duvidar </em>dessa habilidade. 
             Mas além disso, considero que sou/tenho:</p>
         
-        <ul>
+        <ul class="lista4">
             <li>Bom raciocínio lógico</li>
             <li>Pró ativo</li>
             <li>Determinado</li>
@@ -95,6 +113,6 @@
         <br>
         <br>
     
-     <p>No caso de dúvidas de quem sou eu, clique <a href=#foto >aqui</a></p>  
+     <p id="button">No caso de dúvidas de quem sou eu, clique <a href=#foto >aqui</a></p>  
     </body>
     </html>
