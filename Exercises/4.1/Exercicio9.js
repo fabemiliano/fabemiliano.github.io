@@ -1,20 +1,15 @@
-/*10- Escreva um programa que, dado o custo de um produto e seu valor de venda, calcule quanto de 
-lucro (em números absolutos) a empresa terá ao vender mil desses produtos.
+/*8- Escreva um programa que define três números em variáveis no seu começo e 
+retorna true se uma das três for par. Caso contrário, ele retorna false.
 
-Atente que, sobre o custo do produto, incide um imposto de 20% que deve ser 
-considerado no calculo do lucro.
+Bonus: use somente um if.*/
 
-Seu programa também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores 
-de entrada seja menor que zero.*/
+let a = 5
+let b = 7
+let c = 1
 
-let custo = 200
-let venda = 300
-
-let lucro = (venda - custo) * 0.8 * 1000
-
-if (custo < 0 || venda < 0) {
-    console.log("Dados inválidos")
+if ( (a % 2 == 1) || (b % 2 == 1) || (c % 2 == 1) ) {
+    console.log(true)
 }
 else {
-    console.log("R$",lucro)
+    console.log(false)
 }
