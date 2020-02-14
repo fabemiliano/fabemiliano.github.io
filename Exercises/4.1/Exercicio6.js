@@ -21,4 +21,5 @@ switch (peca) {
     case "peao":
         console.log("Mova apenas para frente. Se for a primeira jogada do peão, pode mover uma ou duas. O peao só come na diagonal");
         break;
+    default: console.log("Peça Inválida")
     }
