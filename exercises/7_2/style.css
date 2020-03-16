@@ -1,0 +1,161 @@
+.ball.green.medium#exercise-1{
+    animation-name: moveleft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+   
+@keyframes moveleft{
+    from{
+margin-left: 0%;
+    }
+    to{
+margin-left: 90%;
+    }
+}
+
+
+.ball.green.medium#exercise-2{
+    animation-name: moveleft;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.ball.green.medium#exercise-3{
+    animation-name: moveleft;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+    
+}
+
+
+.ball.green.medium#exercise-4:hover{
+    animation-name: moveleft;
+    animation-duration: 30s;
+}
+
+#section-5:hover{
+    animation-name: moveleft;
+    animation-duration: 5s;
+}
+
+#exercise-6-square:hover{
+    animation-name: moveleft;
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+#exercise-7{
+    animation-name: expand;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes expand{
+    from{
+        width: 50px;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+#exercise-8{
+    animation-name: change;
+    animation-duration: 4s;
+
+}
+
+@keyframes change{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+
+#exercise-9{
+    animation-name: change2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes change2{
+    from{
+        background-color: red;
+    }
+    33%{
+        background-color: yellow;
+    }
+
+    66%{
+        background-color: blue;
+    }
+    to{
+        background-color: green;
+    }
+}
+
+#exercise-10{
+    animation-name: expand, change2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#exercise-11_1{
+animation-name: moveleft;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-timing-function: linear;
+}
+
+#exercise-11_2{
+animation-name: moveleft;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-timing-function: ease;
+}
+
+#exercise-11_3{
+animation-name: moveleft;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-timing-function: ease-in;
+}
+
+#exercise-11_4{
+animation-name: moveleft;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-timing-function: ease-out;
+}
+
+#exercise-11_5{
+animation-name: moveleft;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-timing-function: ease-in-out;
+}
+#exercise-12:active{
+    animation-name: disappear;
+    animation-duration: 1s;
+}
+
+@keyframes disappear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
