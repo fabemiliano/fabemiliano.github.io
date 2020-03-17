@@ -15,7 +15,7 @@ document.querySelector(".back-deck").addEventListener("click", newCard)
 
 function newCard(){
 
-  let i = Math.floor(Math.random()*7)
+  let i = Math.floor(Math.random() * deck.length)
   let imagem = document.createElement("img")
   imagem.src = deck[i]
   imagem.style.width = "150px"

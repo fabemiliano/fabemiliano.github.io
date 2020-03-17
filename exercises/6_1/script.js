@@ -1,5 +1,3 @@
-
-
 let estados = ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RO", "RS", "RR", "SC", "SE", "SP", "TO"]
 for (let i = 0; i < 27; i++){
     var estado = document.createElement("option")
@@ -8,7 +6,6 @@ for (let i = 0; i < 27; i++){
     estado.value = estados[i]
     estado.innerHTML = estados[i]
 }
-
 
 document.getElementById("check").addEventListener("click", testDate)
 
@@ -24,9 +21,7 @@ function testDate(){
 
 }
 
-
 document.getElementById("clean").addEventListener("click",clean)
-
 function clean(){
     let list = document.querySelectorAll("input")
     for (let i = 0; i < list.length; i++){
