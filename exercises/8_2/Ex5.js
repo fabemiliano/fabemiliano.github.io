@@ -23,3 +23,6 @@ const lesson3 = {
 };   
 
 console.log(Object.assign({}, {lesson1}, {lesson2}, {lesson3}))
+
+
+
