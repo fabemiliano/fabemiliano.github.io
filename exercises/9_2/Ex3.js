@@ -63,51 +63,17 @@ const books = [
   },
 ];
 
-// function smallerName() {
-// let size = [];
-// books.forEach((book) => size.push(book.name.length));
-// size.sort(function(a, b){return a - b});
-// let Book = books.find((book) => book.name.length === size[0]);
-// return Book.name
-// }
+const expected_result = [
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu'
+]
 
+function oldBooks() {
+  // escreva seu código aqui
 
-function smallerName() {
-  const a = books.forEach((book)=>{
-    let menosLetra = 100 
-    let nameBook = " "
-    if (book.name.length < menosLetra){
-      menosLetra < book.name.length
-      nameBook = book.name
-    }
-    return nameBook
-  })
-  return a
+  const oldBook = books.filter((book) => (2020 - book.releaseYear) > 60).map(book => book.name)
+  return oldBook
 }
 
-
-console.log(smallerName())
-
-
-
-//assert.equal(smallerName(), 'Duna');
-
-
-
-// const compara = (books) => {
-//   let menosLetra = 100
-//   let menorLivro = " "
-//   for (let i in books) {
-//     if (books[i].name.length < menosLetra) {
-//       menosLetra = books[i].name.length
-//       menorLivro = books[i].name
-//     }
-//   }
-//   return menorLivro
-// }
-// const livro =  books.forEach((element)=> {
-//   var array = []
-//   array.push(element)
-//   console.log(array)
-   
-
+assert.deepEqual(oldBooks(), expected_result);

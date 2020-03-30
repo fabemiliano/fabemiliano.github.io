@@ -63,51 +63,27 @@ const books = [
   },
 ];
 
-// function smallerName() {
-// let size = [];
-// books.forEach((book) => size.push(book.name.length));
-// size.sort(function(a, b){return a - b});
-// let Book = books.find((book) => book.name.length === size[0]);
-// return Book.name
+const expected_result = [
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien'
+]
+
+// function fantasyOrScienceFictionAuthors() {
+//   // escreva seu código aqui
+
+//   const bookGenre = books.filter((book)=> book.genre === "Fantasia" || book.genre === "Ficção Científica").map((book)=>book.author.name).sort()
+//   return bookGenre
 // }
 
 
-function smallerName() {
-  const a = books.forEach((book)=>{
-    let menosLetra = 100 
-    let nameBook = " "
-    if (book.name.length < menosLetra){
-      menosLetra < book.name.length
-      nameBook = book.name
-    }
-    return nameBook
-  })
-  return a
+function fantasyOrScienceFictionAuthors() {
+  // escreva seu código aqui
+  const filterBook = (book) => book.genre === "Fantasia" || book.genre === "Ficção Científica"
+  const mapBook = (book) => book.author.name
+  const bookGenre = books.filter(filterBook).map(mapBook).sort()
+  return bookGenre
 }
 
-
-console.log(smallerName())
-
-
-
-//assert.equal(smallerName(), 'Duna');
-
-
-
-// const compara = (books) => {
-//   let menosLetra = 100
-//   let menorLivro = " "
-//   for (let i in books) {
-//     if (books[i].name.length < menosLetra) {
-//       menosLetra = books[i].name.length
-//       menorLivro = books[i].name
-//     }
-//   }
-//   return menorLivro
-// }
-// const livro =  books.forEach((element)=> {
-//   var array = []
-//   array.push(element)
-//   console.log(array)
-   
-
+assert.deepEqual(fantasyOrScienceFictionAuthors(), expected_result);

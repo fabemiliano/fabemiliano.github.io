@@ -63,51 +63,19 @@ const books = [
   },
 ];
 
-// function smallerName() {
-// let size = [];
-// books.forEach((book) => size.push(book.name.length));
-// size.sort(function(a, b){return a - b});
-// let Book = books.find((book) => book.name.length === size[0]);
-// return Book.name
-// }
+const expected_result = [
+  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+  'Fundação - Ficção Científica - Isaac Asimov',
+  'Duna - Ficção Científica - Frank Herbert',
+  'A Coisa - Terror - Stephen King',
+  'O Chamado de Cthulhu - Terror - H. P. Lovecraft'
+];
 
-
-function smallerName() {
-  const a = books.forEach((book)=>{
-    let menosLetra = 100 
-    let nameBook = " "
-    if (book.name.length < menosLetra){
-      menosLetra < book.name.length
-      nameBook = book.name
-    }
-    return nameBook
-  })
-  return a
+function formatedBookNames() {
+  // escreva seu código aqui
+  const index = books.map(book =>`${book.name} - ${book.genre} - ${book.author.name}`)
+  return index
 }
 
-
-console.log(smallerName())
-
-
-
-//assert.equal(smallerName(), 'Duna');
-
-
-
-// const compara = (books) => {
-//   let menosLetra = 100
-//   let menorLivro = " "
-//   for (let i in books) {
-//     if (books[i].name.length < menosLetra) {
-//       menosLetra = books[i].name.length
-//       menorLivro = books[i].name
-//     }
-//   }
-//   return menorLivro
-// }
-// const livro =  books.forEach((element)=> {
-//   var array = []
-//   array.push(element)
-//   console.log(array)
-   
-
+assert.deepEqual(formatedBookNames(), expected_result);

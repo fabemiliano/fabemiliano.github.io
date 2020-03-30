@@ -63,51 +63,16 @@ const books = [
   },
 ];
 
-// function smallerName() {
-// let size = [];
-// books.forEach((book) => size.push(book.name.length));
-// size.sort(function(a, b){return a - b});
-// let Book = books.find((book) => book.name.length === size[0]);
-// return Book.name
-// }
 
-
-function smallerName() {
-  const a = books.forEach((book)=>{
-    let menosLetra = 100 
-    let nameBook = " "
-    if (book.name.length < menosLetra){
-      menosLetra < book.name.length
-      nameBook = book.name
-    }
-    return nameBook
-  })
-  return a
-}
-
-
-console.log(smallerName())
+function allNames() {
+  // escreva seu código aqui
+  const createName = (string, autor) => string + autor.author.name + ", " 
+  const autores = books.reduce(createName, "Nomes: ")
+  autor = autores.slice(0, -2)+"."
+   return autor
+  }
 
 
 
-//assert.equal(smallerName(), 'Duna');
 
-
-
-// const compara = (books) => {
-//   let menosLetra = 100
-//   let menorLivro = " "
-//   for (let i in books) {
-//     if (books[i].name.length < menosLetra) {
-//       menosLetra = books[i].name.length
-//       menorLivro = books[i].name
-//     }
-//   }
-//   return menorLivro
-// }
-// const livro =  books.forEach((element)=> {
-//   var array = []
-//   array.push(element)
-//   console.log(array)
-   
-
+assert.deepEqual(allNames(), "Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.");

@@ -63,51 +63,43 @@ const books = [
   },
 ];
 
-// function smallerName() {
-// let size = [];
-// books.forEach((book) => size.push(book.name.length));
-// size.sort(function(a, b){return a - b});
-// let Book = books.find((book) => book.name.length === size[0]);
-// return Book.name
-// }
+const expected_result = [
+  {
+    age: 31,
+    author: 'Isaac Asimov'
+  },
+  {
+    age: 38,
+    author: 'H. P. Lovecraft'
+  },
+  {
+    age: 39,
+    author: 'Stephen King'
+  },
+  {
+    age: 43,
+    author: 'George R. R. Martin'
+  },
+  {
+    age: 45,
+    author: 'Frank Herbert'
+  },
+  {
+    age: 62,
+    author: 'J. R. R. Tolkien'
+  }
+];
 
-
-function smallerName() {
-  const a = books.forEach((book)=>{
-    let menosLetra = 100 
-    let nameBook = " "
-    if (book.name.length < menosLetra){
-      menosLetra < book.name.length
-      nameBook = book.name
-    }
-    return nameBook
+function nameAndAge() {
+  // escreva seu código aqui
+  const obj = books.map(book => {
+    let item = {}
+    item.age = (book.releaseYear - book.author.birthYear);
+    item.author = book.author.name
+   return item
   })
-  return a
+  return obj.sort((a, b) => a.age - b.age)
 }
 
 
-console.log(smallerName())
-
-
-
-//assert.equal(smallerName(), 'Duna');
-
-
-
-// const compara = (books) => {
-//   let menosLetra = 100
-//   let menorLivro = " "
-//   for (let i in books) {
-//     if (books[i].name.length < menosLetra) {
-//       menosLetra = books[i].name.length
-//       menorLivro = books[i].name
-//     }
-//   }
-//   return menorLivro
-// }
-// const livro =  books.forEach((element)=> {
-//   var array = []
-//   array.push(element)
-//   console.log(array)
-   
-
+assert.deepEqual(nameAndAge(), expected_result);

@@ -63,51 +63,18 @@ const books = [
   },
 ];
 
-// function smallerName() {
-// let size = [];
-// books.forEach((book) => size.push(book.name.length));
-// size.sort(function(a, b){return a - b});
-// let Book = books.find((book) => book.name.length === size[0]);
-// return Book.name
-// }
+const expected_result = 43;
 
+// Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 
-function smallerName() {
-  const a = books.forEach((book)=>{
-    let menosLetra = 100 
-    let nameBook = " "
-    if (book.name.length < menosLetra){
-      menosLetra < book.name.length
-      nameBook = book.name
-    }
-    return nameBook
-  })
-  return a
+// Dica: Utilize a função reduce
+
+function averageAge() {
+  // escreva seu código aqui
+ const calculateAge = (media, book) => (media + (book.releaseYear - book.author.birthYear))
+ const averageAge = books.reduce(calculateAge,0)/books.length
+ return averageAge
+
 }
 
-
-console.log(smallerName())
-
-
-
-//assert.equal(smallerName(), 'Duna');
-
-
-
-// const compara = (books) => {
-//   let menosLetra = 100
-//   let menorLivro = " "
-//   for (let i in books) {
-//     if (books[i].name.length < menosLetra) {
-//       menosLetra = books[i].name.length
-//       menorLivro = books[i].name
-//     }
-//   }
-//   return menorLivro
-// }
-// const livro =  books.forEach((element)=> {
-//   var array = []
-//   array.push(element)
-//   console.log(array)
-   
-
+assert.equal(averageAge(), expected_result)
