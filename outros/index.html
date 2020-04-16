@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="facebook-logo">
+                <img src="images/logo.png" width="150px" alt="logo facebook">
+            </div>
+
+            <form class="loginArea">
+                <div class="input-content">
+                    <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+                    <input type="text" name="user-email-phone" id="user-email-phone">
+                </div>
+                <div class="input-content">
+                    <label for="">Senha</label>
+                    <input type="password" name="user-senha" id="user-senha">
+                </div>
+
+                <button id="button-login" type="submit" value="Entrar"> Entrar </button>              
+            </form>            
+        </div>
+    </header>
+
+    <section class="contents">
+        <section id="lado-esquerdo" class="lado-esquerdo">
+            <p>O Facebook ajuda você a se conectar e 
+                    compartilhar com as pessoas 
+                        que fazem parte da sua vida.</p>
+            <p><img id="facebook-networking" src="images/networking.png" width="500px" alt="network facebook"></p>
+        </section>
+        <div id="lado-direito" class="lado-direito">
+            <header id="header-lado-direito">
+                <h2>Abra uma conta</h2>
+                <h3>É rápido e fácil.</h3>
+            </header>
+
+            <form action="">
+                <div class="content-formulario">
+                    <div classe="nomeSobrenome">
+                        <input type="text" placeholder="Nome" name="nomeForm" id="nomeForm" required>
+                        <input type="text" placeholder="Sobrenome" name="sobrenomeForm" id="sobrenomeForm" required>
+                    </div>
+                   
+                        <input type="text" placeholder="Celular ou email" name="emailForm" id="emailForm" required class="email">
+                        <input type="password" placeholder="Nova senha" name="senhaForm" id="senhaForm" required class="email">
+                   
+                    <div class="dataNascimento">
+                        <label for="">Data de nascimento</label>
+                        <input type="text" placeholder="dd/mm/aaaa" name="dataForm" id="dataForm" required>
+                    </div>
+                    <div class="genero">
+                        <label for="">Gênero</label>
+                        <input type="radio" name="femininoForm" id="femininoForm" required>
+                        <label for="">Feminino</label>
+                        <input type="radio" name="masculinoForm" id="masculinoForm" required>
+                        <label for="">Masculino</label>
+                        <input type="radio" name="personForm" id="personForm" required>
+                        <label for="">Personalizado</label>
+                    </div>                    
+                </div>
+
+                <input type="submit" id="facebook-register" value="Cadastre-se">
+            </form>
+
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>

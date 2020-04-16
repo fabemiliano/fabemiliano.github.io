@@ -1,192 +1,31 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Portfolio Fabiano</title>
-    <style>
-       
-
-        *{
-            margin: 0 0 0 0;
-        }
-
-        body {
-            background-color: rgb(22, 217, 199);
-        }
-
-        h2, p, ul, a {
-            font-family: Roboto;
-        }
-
-       
-
-        h1 {
-            color: rgb(74, 58, 148);
-            font-weight: 400;
-            font-family: Amatic, Helvetica, sans-serif;
-            text-align: center;
-            font-size: 100px;
-        }
-
-        h2 {
-            color: rgb(255, 255, 255);
-            background-color: rgb(74, 58, 148);
-            text-align: center;
-            padding: 10 10 10;
-            margin: 20 60 20 60;
-            
-            
-        }
-
-        p {
-            color: rgb(104, 97, 163);
-            font-size: 30px;
-            text-align: justify;
-            padding: 3px;
-            line-height: 1.2;
-          
-        }
-
-        a {
-            color: rgb(104, 97, 163);
-        }
-
-        .lista1 {
-            color: rgb(104, 97, 163);
-            font-size: 20px;
-            margin: 10 60 10 20;
-            list-style-type: none;
-        }
-
-        .lista4 {
-            color: rgb(104, 97, 163);
-            font-size: 30px;
-            margin: auto;
-            list-style-type: none;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-        .pic {
-            float: left;
-            margin: 0 10 0 60;
-            text-align: center;
-            padding: 10 10 10 10;
-            background-color: rgb(104, 97, 163);
-        }
-
-        .texto1 {
-            
-            
-            position: relative;
-            margin-right: 70;
-            margin-left: 60;
-        
-            
-        }
-
-        .texto2 {
-            margin: 20 60 20 60 ;
-        }
-
-        .texto3 {
-            margin: 20 60 10 60;
-        }
-
-        #button {
-            color: rgb(255, 255, 255);
-            background-color: rgb(74, 58, 148);
-            border: chartreuse;
-            padding: 10 10 10 10;
-            margin: 15 15 15 15;
-            border-radius: 5px;
-            border-width: 5px;
-            display: inline-block;
-            margin-left: 60;
-        }
-
-       .habilidade {
-            font-weight: bold; 
-       }
-
-        #button-in {
-            color: rgb(128, 240, 166);
-        }
-
-        .banner {
-            
-        }
-
-
-        #banner {
-            height: 200px;
-            width: 100%;
-        }
-        
-        #video {
-            margin: auto;
-            align-self:center;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Capriola&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
-
 <body>
-
-    <div class="banner"><img src="images/banner4.jpg" id="banner"></div>
-
-    <div class="nome">
-        <h1>Fabiano Emiliano Antonio Martins dos Santos</h1>
+    <div class="content">
+        <div class="main">
+            <nav class="nav-bar">
+                <a href="index.html" style="text-decoration:none"><div class="item">MAIN</div></a>
+                <a ><div class="item">ABOUT</div></a>
+                <a href="projects.html" style="text-decoration:none"><div class="item">PROJECTS</div></a>
+                <a><div class="item">CONTACT</div></a>
+                
+            </nav>
+            <section class="introduction">
+                <p class="first">Welcome!</p>
+                <p class="second">I'm Fabiano</p>
+                <p class="third"> I'm currently studying to bet the next full stack developer you need.</p>
+                <p class="third">Make yourself confortable and have a look at what I'm working on at the moment</p>
+            </section>
+        </div>
+        
     </div>
-
-    <ul class="lista1">
-        <li><a href=#Parte1>Quem sou eu</a></li> <br>
-        <li><a href=#Parte2>O que faço bem</a></li> <br>
-        <li><a href=#Parte3>Uma recomedação para você</a></li>
-    </ul>
-
-
-    <h2 id="Parte1">Quem sou eu</h2>
-
-    <div class="pic">
-        <img src="images/foto.jpeg" width="400" id="foto">
-    </div>
-
-    <div class="texto1">
-        <p> Olá, sou do interior de minas, moro em Floripa, vim para cá a primeira vez em 2016 e a segunda em 2019.</p>
-        <p>No ano passado, ao voltar de um tempo na Austrália e me deparar com a dificuldade de voltar para o mercado
-            como Engenheiro Químico, decidi
-            me aveturar no mundo da tecnologia.</p>
-        <p>Sou apaixonado por música eletrônica, especificamente techno e house progressivo. No momento estou aprendendo
-            a mixar, um hoby que descobri e que
-            um dia que sabe toco em alguma festa :).</p>
-    </div>
-
-    <h2 id="Parte2">O que faço bem</h2>
-    <div class="texto2">
-        <p>Sempre me considerei uma pessoa com habilidade em aprender fácil, porém desde que comecei na Trybe passei a
-            <em>duvidar </em>dessa habilidade.
-            Mas além disso, considero que sou/tenho:</p>
-    </div>
-    <ul class="lista4">
-        <li class="habilidade">Bom raciocínio lógico</li>
-        <li>Pró ativo</li>
-        <li class="habilidade">Determinado</li>
-        <li>Pragmático</li>
-    </ul>
-    <h2 id="Parte3">Uma recomendação para você</h2>
-    <div class="texto3">
-        <p>Gostaria deixar aqui um canal no youtube que eu gosto muito e acho que todo mundo deveria ver também,
-            <strong>pois aprender algo todo dia
-                é muito bom:</strong> <a target="_blank" href="https://www.youtube.com/user/nerdologia/videos">Canal
-                Nerdologia</a></p>
-
-        <iframe  id="video" width="800" height="500" src="https://www.youtube.com/embed/A-jIUPEqYdw">
-        </iframe>
-    </div>
-
-
-
-    <p id="button">No caso de dúvidas de quem sou eu, clique <a id="button-in" href=#foto>aqui</a></p>
 </body>
-
 </html>
