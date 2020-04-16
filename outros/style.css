@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+}
+.top-bar {
+    display: flex;
+    background-color: #3b5998;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.loginArea {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.top-bar .input-content input {
+    width: 150px;
+    margin-top: 5px;
+    background-color: #e3e9f5; ;
+}
+
+.loginArea{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+.input-content{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    color: white;
+    
+}
+
+.facebook-logo{
+    margin-left: 5px;
+}
+
+button {
+    
+    padding: 5px;
+    color: white;
+    background-color: rgb(200, 207, 231);
+}
+
+.contents {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #e3e9f5;
+    background-image: linear-gradient(to top,#e3e9f5, white );
+}
+
+p{
+    margin-right: 200px;
+    margin-left: auto;
+    width: 340px;
+    font-size: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b5998;
+
+}
+
+.lado-esquerdo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+    width: 1100px;
+}
+
+.lado-direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 100px;
+    
+}
+
+.lado-direito header{
+    height: 10%;
+    margin-top: 50px;
+}
+
+.content-formulario{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 75%;
+}
+
+form{
+    height: 75%;
+}
+
+.contatoEmail{
+    display: flex;
+    flex-direction: column;
+}
+
+.dataNascimento{
+    display: flex;
+    flex-direction: column;
+}
+
+.dataNascimento input{
+    width: 150px;
+    height: 30px;
+}
+
+
+
+.email {
+    width:350px;
+    height: 30px;
+}
+
+.nomeSobrenome > input{
+    width: 150px;
+    height: 30px;
+}

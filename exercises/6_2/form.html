@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dist/css/DatePickerX.css">
+    <script src="dist/js/DatePickerX.js"></script>
+</head>
+<body>
+    <form class="form-control">
+    <fieldset id="dados">
+        <legend class="card-title">Dados Pessoais</legend>
+        <div ><label for = "nome">NOME</label><input class="input-group-append" id="nome" type="text" maxlength="40" required="required"></div">
+        <div ><label for = "email">E-MAIL</label><input class="form-control" id="email" type="email" maxlength="50" required="required"></div >
+        <div ><label for = "cpf">CPF</label><input id="cpf" class="form-control" type="text" maxlength="11" required="required"></div>
+        <div ><label for = "endereco">ENDEREÇO</label><input class="form-control" id="endereco" type="text" maxlength="11" required="required"></div >
+        <div ><label for = "cidade">CIDADE</label><input class="form-control" id="cidade" type="text" maxlength="28" required="required"></div >
+        <div ><label for="estados">ESTADO</label><select class="btn btn-secondary btn-lg" id="estados"></select></div >
+        <div ><label for = "cidade">CIDADE<input id="cidade" class="form-control" type="text" maxlength="28" required="required"></label>
+        <div >
+        <div>Tipo</div>
+        <div ></div>
+        <label for="casa"><input type="radio"  id="casa"required="required">Casa</label></div>
+        <div><label for="apartamento"><input type="radio" id="apartamento"required="required">Apartamento</label></div>
+        </div>
+    </fieldset>
+
+<fieldset>
+<legend>Dados Profissionais</legend>
+    <label for id="resume">Resumo do Curriculo</label><textarea class="input-group-append" id="resume" maxlength="1000" required="requires"></textarea>
+    <div ><label for = "cargo">CARGO</label><input class="form-control" id="cargo" type="text" maxlength="40" required="required"></div >
+    <div ><label for = "desc-cargo">DESCRIÇÃO DO CARGO</label><input class="form-control" id="desc-cargo" type="text" maxlength="500" required="required"></div>
+    <div ><label for = "data-inicio">DATA DE INICIO</label><input class="form-control" id="data-inicio" type="text" maxlength="11" required="required"></div >
+    <button class="btn btn-secondary btn-lg" id="check">check</button>
+</fieldset>
+
+
+<button class="btn btn-primary" id="clean">Limpar formulário</button>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+
+
+
+
+Data de início - Texto
+
+Verificar o formato da data dd/mm/aaaa.
+
+O dia deve ser > 0 e <= 31.
+
+O mês deve ser > 0 e <= 12.
+
+O ano não pode ser negativo.
+
+Caso alguma das condições for inválida no momento do envio do formulário, exibir mensagem de erro contextualizada.
+
+Campo obrigatório
+
+-->

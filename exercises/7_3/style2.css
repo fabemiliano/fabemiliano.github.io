@@ -1,0 +1,24 @@
+.board{
+  display: flex;
+  flex-direction: column;
+}
+
+.grid{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.card{
+  margin-left: 20px;
+  width: 150px;
+  transition-property: "transform";
+  transition-duration: 2s;
+}
+
+
+.card:hover{
+  transform: scale3d(2, 2, 2);
+}
+

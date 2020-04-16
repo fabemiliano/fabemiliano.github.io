@@ -1,0 +1,55 @@
+
+
+.center {
+    border: 1px black solid;
+    display: block;
+    height: 70%;
+    margin: 100px auto auto auto;
+    text-align: center;
+    width: 60%;
+}
+
+div{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    margin: 10px auto 10px auto;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+}
+
+.ball {    
+    background-color: thistle;
+    border: black solid 2px;
+    border-radius: 50%;
+    color: rgba(0, 0 ,0,0);
+    display: inline-block;
+    height: 80px;
+    margin: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.ball-section{
+    margin-top: 20px;
+}
+
+.placar {
+    border: black 1px solid;
+    display: block;
+    height: 80px;
+    width: 160px;
+}
+
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: large;
+    height: 50px;
+    width: 150px;
+}
+
+button{
+    cursor: pointer;
+}
