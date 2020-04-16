@@ -1,9 +1,0 @@
-{
-  "scripts": {
-    "test": "jest"
-  },
-  "dependencies": {
-    "jest": "^25.2.7",
-    "node-fetch": "^2.6.0"
-  }
-}
