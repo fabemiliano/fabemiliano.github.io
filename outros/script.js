@@ -1,8 +1,20 @@
+import emailAddress from 'formvalidation/dist/es6/validators/emailAddress';
 
+const res1 = emailAddress().validate({
+    value: 'niceandsimple@example.com',
+    options: {
+        message: 'The value is not a valid email address',
+    },
+});
+// res1.valid === true
 
-console.log(document.querySelector("#header-lado-direito"))
-console.log(document.getElementById("header-lado-direito"))
-console.log(document.querySelector(".top-bar"))
+const res2 = emailAddress().validate({
+    value: 'just"not"right@example.com',
+    options: {
+        message: 'The value is not a valid email address',
+    },
+});
+
 
 
 
