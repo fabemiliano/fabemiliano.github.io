@@ -9,7 +9,7 @@ html{
 
 body{
     height: 100%;
-    background-image: url(images/background.png);
+    background-image: url(images/background.jpg);
     background-size: cover;
 }
 
@@ -30,11 +30,6 @@ body{
 
 }
 
-.nav-bar{
-    padding-top: 50px;
-    font-family: 'Capriola', sans-serif;
-}
-
 .item{
     color: white;
     padding-top: 10px;
@@ -43,6 +38,16 @@ body{
     padding: 15px;
     text-align: center;
      
+}
+
+.item:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.nav-bar{
+    padding-top: 50px;
+    font-family: 'Capriola', sans-serif;
 }
 
 header{
@@ -66,41 +71,39 @@ margin-bottom: 50px;
 .subtitle{
 font-size: 30px;
 }
+
+
+
 .topics{
-    height: 100%;
     width: 60%;
     display: flex;
     justify-content: space-between;
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    
 }
 
 .box{
     width:30%;
     height: 30%;
-    
     margin: 10px;
     text-align: center;
     display: table;
    }
 
 
-a {width:30%;
+a.box {width:30%;
     height: 30%;
     margin: 10px;
     text-align: center;
     display: table;
    }
-.topics::after{
-    content: "";
-    flex: auto;
-}
+
+
 .box:hover {
     border: 2px solid white;
     background-color: white;
+    cursor: pointer;
 }
 
 p {
