@@ -1,0 +1,38 @@
+.Alert{
+  background: gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.clickbox {
+  border: solid black 1px;
+  width: 100px;
+  text-align: center;
+  margin-left: 50px;
+  vertical-align: middle;
+  height: 50px;
+  line-height: 50px;
+}
+
+.clickbox2 {
+
+  width: 200px;
+  text-align: center;
+
+  vertical-align: middle;
+  height: 50px;
+  line-height: 50px;
+}
+
+.dropdown {
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+  margin-left: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.dropdown-hide {
+  display: none;
+}
