@@ -1,1 +1,0 @@
-export const action = (value, input) => ({type: 'CHANGE', value, input })
