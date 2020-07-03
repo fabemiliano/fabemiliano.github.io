@@ -10939,17 +10939,27 @@ textarea.form-control {
 @keyframes up-and-down {
   0% {
     top: -100vh;
+    right: 0;
+  }
+  50% {
+    right: 80%;
   }
   100% {
     top: 100vh;
+    right: 0;
   }
 }
 
 @keyframes down-and-up {
   0% {
     top: 100vh;
+    left: 0;
+  }
+  50% {
+    left: 80%;
   }
   100% {
     top: -100vh;
+    left: 0;
   }
 }
