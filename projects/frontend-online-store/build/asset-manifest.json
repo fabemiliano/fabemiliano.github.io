@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/projects/frontend-online-store/static/css/main.ae25bb58.chunk.css",
-    "main.js": "/projects/frontend-online-store/static/js/main.55c16112.chunk.js",
-    "main.js.map": "/projects/frontend-online-store/static/js/main.55c16112.chunk.js.map",
-    "runtime-main.js": "/projects/frontend-online-store/static/js/runtime-main.10cc14a3.js",
-    "runtime-main.js.map": "/projects/frontend-online-store/static/js/runtime-main.10cc14a3.js.map",
-    "static/js/2.2ae8694d.chunk.js": "/projects/frontend-online-store/static/js/2.2ae8694d.chunk.js",
-    "static/js/2.2ae8694d.chunk.js.map": "/projects/frontend-online-store/static/js/2.2ae8694d.chunk.js.map",
-    "index.html": "/projects/frontend-online-store/index.html",
-    "precache-manifest.4165984ea349662cb8af50514e93d8f1.js": "/projects/frontend-online-store/precache-manifest.4165984ea349662cb8af50514e93d8f1.js",
-    "service-worker.js": "/projects/frontend-online-store/service-worker.js",
-    "static/css/main.ae25bb58.chunk.css.map": "/projects/frontend-online-store/static/css/main.ae25bb58.chunk.css.map",
-    "static/js/2.2ae8694d.chunk.js.LICENSE.txt": "/projects/frontend-online-store/static/js/2.2ae8694d.chunk.js.LICENSE.txt",
-    "static/media/carrinho.png": "/projects/frontend-online-store/static/media/carrinho.2ad5e133.png",
-    "static/media/cart.png": "/projects/frontend-online-store/static/media/cart.c343ae9b.png"
+    "main.css": "/frontend-online-store/static/css/main.ae25bb58.chunk.css",
+    "main.js": "/frontend-online-store/static/js/main.db306290.chunk.js",
+    "main.js.map": "/frontend-online-store/static/js/main.db306290.chunk.js.map",
+    "runtime-main.js": "/frontend-online-store/static/js/runtime-main.dc2d6de8.js",
+    "runtime-main.js.map": "/frontend-online-store/static/js/runtime-main.dc2d6de8.js.map",
+    "static/js/2.2ae8694d.chunk.js": "/frontend-online-store/static/js/2.2ae8694d.chunk.js",
+    "static/js/2.2ae8694d.chunk.js.map": "/frontend-online-store/static/js/2.2ae8694d.chunk.js.map",
+    "index.html": "/frontend-online-store/index.html",
+    "precache-manifest.ee2c62232e588c035e5629017c9b79e6.js": "/frontend-online-store/precache-manifest.ee2c62232e588c035e5629017c9b79e6.js",
+    "service-worker.js": "/frontend-online-store/service-worker.js",
+    "static/css/main.ae25bb58.chunk.css.map": "/frontend-online-store/static/css/main.ae25bb58.chunk.css.map",
+    "static/js/2.2ae8694d.chunk.js.LICENSE.txt": "/frontend-online-store/static/js/2.2ae8694d.chunk.js.LICENSE.txt",
+    "static/media/carrinho.png": "/frontend-online-store/static/media/carrinho.2ad5e133.png",
+    "static/media/cart.png": "/frontend-online-store/static/media/cart.c343ae9b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.10cc14a3.js",
+    "static/js/runtime-main.dc2d6de8.js",
     "static/js/2.2ae8694d.chunk.js",
     "static/css/main.ae25bb58.chunk.css",
-    "static/js/main.55c16112.chunk.js"
+    "static/js/main.db306290.chunk.js"
   ]
 }
