@@ -7290,7 +7290,14 @@ body {
     -moz-transform: rotate(-30deg);
     -ms-transform: rotate(-30deg);
     -o-transform: rotate(-30deg);
-    transform: rotate(-30deg); }
+    transform: rotate(-30deg); 
+  animation-name: up-and-down;
+animation-duration: 12s;
+animation-timing-function: ease-in-out;
+animation-direction: alternate;
+animation-fill-mode: backwards;
+animation-iteration-count: infinite ;
+}
   body:before {
     position: fixed;
     top: 500px;
@@ -7306,7 +7313,13 @@ body {
     -moz-transform: rotate(20deg);
     -ms-transform: rotate(20deg);
     -o-transform: rotate(20deg);
-    transform: rotate(20deg); }
+    transform: rotate(20deg); 
+    animation-name: down-and-up;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite ;}
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8785,3 +8798,16 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+ @keyframes up-and-down {
+      0% {
+top: -100vh;}
+      100% {
+        top: 100vh; } }
+
+        @keyframes down-and-up {
+          0% {
+    top: 100vh;}
+          100% {
+            top: -100vh; } }
+    
