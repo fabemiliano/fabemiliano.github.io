@@ -1,6 +1,5 @@
 const container = document.querySelector('.menu-container');
 const menu = document.querySelector('.menu-icon');
-container.classList.forEach(e => console.log(e))
 menu.addEventListener('click', () => {
   console.log(container.classList)
   container.classList.forEach(e => {
@@ -20,18 +19,18 @@ menu.addEventListener('click', () => {
   })
 });
 
-$(document).on('ready', function() {  
-  var winHeight = $(window).height(), 
-      docHeight = $(document).height(),
-      progressBar = $('progress'),
-      max, value;
-
-  /* Set the max scrollable area */
+$(document).on('ready', function () {
+  var winHeight = $(window).height(),
+    docHeight = $(document).height(),
+    progressBar = $('progress'),
+    max, value;
   max = docHeight - winHeight;
   progressBar.attr('max', max);
 
-  $(document).on('scroll', function(){
-     value = $(window).scrollTop();
-     progressBar.attr('value', value);
+
+  $(document).on('scroll', function () {
+    value = $(window).scrollTop();
+    progressBar.attr('value', value);
   });
 });
+
