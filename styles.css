@@ -8,13 +8,13 @@ h1, h3 {
 
 .my-photo {
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
 
-.my-photo img{
-   width: 100px;
-   border-radius: 50%;
-   margin: 0 20px;
+.my-photo img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 20px;
 }
 
 a {
@@ -40,7 +40,6 @@ p {
     width: 90%;
 }
 
-
 .colorlib-nav-toggle {
     margin: unset;
 }
@@ -63,10 +62,117 @@ p {
     animation-timing-function: linear;
 }
 
-@keyframes spin { 
-    from { 
-        transform: rotate(0deg); 
-    } to { 
-        transform: rotate(360deg); 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
     }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .menu-container {
+        text-align: end;
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+        width: 100%;
+    }
+    .menu-options {
+        text-align: end;
+        list-style: none;
+        color: #2f89fc;
+        font-size: 3rem;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .menu-container {
+        text-align: end;
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+        width: 100%;
+    }
+    .menu-options {
+        text-align: end;
+        list-style: none;
+        color: #2f89fc;
+        font-size: 2rem;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .menu-container {
+        text-align: end;
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+        width: 100%;
+    }
+    .menu-options {
+        text-align: end;
+        list-style: none;
+        color: #2f89fc;
+        font-size: 1.5rem;
+        margin-right: 5%;
+    }
+}
+
+.hidden {
+    display: none;
+    animation: fade-in;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.not-show-menu {
+    animation: fade-out;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.show-menu {
+    animation: fade-in;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+  
+#progressBar {
+    background-color: blue;
+}
+
+  progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: .25em;
+  border: none;
 }
