@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { getFirstMeals, getMealById, getByIgredient } from '../services/foodApi';
 import { getFirstDrinks, getDrinksByIngredient, getDrinkByID } from '../services/drink-api';
@@ -8,6 +8,10 @@ export const ContextAplication = createContext();
 const user = { email: '', password: '' };
 
 const AplicationProvider = ({ children }) => {
+  useEffect(() => {
+    document.title = 'Recipe App';
+  }, []);
+
   const [informationsUser, setInformationsUser] = useState(user);
   const [searchInputVisible, setSearchInputVisible] = useState(false);
   const [Data, setData] = useState([]);
@@ -53,17 +57,17 @@ const AplicationProvider = ({ children }) => {
   };
 
   const getFoodScreenInfos = (foodId) => {
+    setId(foodId);
     getMealById(foodId).then((data) => {
       setRecipeInfo(data.meals[0]);
-      setId(foodId);
     });
     getFirstDrinks().then((data) => setRecomendation(data.drinks));
   };
 
   const getDrinkScreenInfos = (drinkId) => {
+    setId(drinkId);
     getDrinkByID(drinkId).then((data) => {
       setRecipeInfo(data.drinks[0]);
-      setId(drinkId);
     });
     getFirstMeals().then((data) => setRecomendation(data.meals));
   };
