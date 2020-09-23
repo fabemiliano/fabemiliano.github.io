@@ -83,6 +83,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color: #2f89fc;
 }
 
 p {
@@ -10962,4 +10963,8 @@ textarea.form-control {
     top: -100vh;
     left: 0;
   }
+}
+
+h2 {
+  color: #2f89fc;
 }

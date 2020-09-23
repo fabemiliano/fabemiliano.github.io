@@ -1,12 +1,7 @@
-const BASE_API = 'https://swapi-trybe.herokuapp.com/api';
+const getInfo = async () => {
+  const data = await fetch('https://swapi-trybe.herokuapp.com/api/planets');
+  const planets = await data.json();
+  return planets;
+};
 
-const getStarWarsPlanetsData = () => (
-  fetch(`${BASE_API}/planets`)
-  .then((response) => (
-    response
-    .json()
-    .then((json) => (response.ok ? Promise.resolve(json) : Promise.reject(json)))
-  ))
-);
-
-export default getStarWarsPlanetsData;
+export default getInfo;

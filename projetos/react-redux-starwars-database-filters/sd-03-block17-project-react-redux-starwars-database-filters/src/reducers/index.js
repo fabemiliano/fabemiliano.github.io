@@ -1,10 +1,8 @@
+
 import { combineReducers } from 'redux';
 
-import starWars from './starWars';
 import filters from './filters';
+import dataReducer from './dataReducer';
+import columnsReducer from './columnsReducer';
 
-const rootReducer = combineReducers({
-  starWars, filters,
-});
-
-export default rootReducer;
+export default combineReducers({ filters, dataReducer, columnsReducer });

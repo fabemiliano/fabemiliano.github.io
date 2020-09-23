@@ -16,7 +16,7 @@ function addTask() {
     bullet.addEventListener("click", changeColor)    //pra cada li criado eu crio um evento (estava colando fora da funcao)
     function changeColor() {
         bullet.style.backgroundColor = "rgb(128,128,128)"
-        bullet.classList.add("selected")   //adiciona a classe selected pois irei precisar dessa classe depois para remover
+        bullet.classList.toggle("selected")   //adiciona a classe selected pois irei precisar dessa classe depois para remover
     }
 
     // adicionar doubleclick

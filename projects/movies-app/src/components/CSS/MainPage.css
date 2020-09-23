@@ -1,0 +1,106 @@
+.side-and-main {
+  width: 100%;
+  display: flex;
+}
+
+.search-and-main {
+  width: 80%;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.movie-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+  width: 100%;
+}
+
+.movie-infos p {
+  width: 200px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.movie-infos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 80px;
+  width: 100%;
+}
+
+.movie-infos div h4, .movie-infos div h3 {
+  text-align: center;
+}
+
+.main-container img {
+  width: 200px;
+}
+
+.video-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.video-container div {
+  margin: 10px;
+}
+
+.movie-details-container img {
+  width: 300px;
+}
+
+.movie-details-container {
+  width: 80%;
+}
+
+.main-info {
+  display: flex;
+}
+
+.main-container a {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 5px auto
+}
+
+.best-infos > p {
+  width: 20px
+}
+
+.best-infos div {
+  width: 90%;
+  margin: 0 25px
+}
+
+.best-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.best-bar img {
+  width: 50px
+}
+
+.inner-text {
+  width: 90%;
+  text-align: left;
+}

@@ -1,0 +1,58 @@
+.gameBoard {
+  display: flex;
+  width: 90%;
+  height: 80vh;
+  margin: 5vh auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  width: 23%;
+  height: 23%;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  /* transform-style: preserve-3d; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+
+}
+
+.front {
+  background: linear-gradient(97deg, rgba(255,0,218,.5), rgba(215,210,0,0.5));
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+.back {
+  background: rgb(32, 193, 214);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 30px;
+  cursor: pointer;
+
+
+}
+
+.showfront {
+  transform: rotateY(180deg);
+}
+
+.showback {
+  transform: rotateY(360deg);
+}

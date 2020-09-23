@@ -1,0 +1,34 @@
+.main-frame {
+  position: relative;
+  /* border: 2px solid black; */
+  height: 90vh;
+  width: 90%;
+  top: 5vh;
+  left: 5%;
+}
+
+.main-frame img {
+  position: absolute;
+  background-color: transparent;
+  border: transparent;
+  width: 50px;
+  transition: transform 0.5s ease-out;
+}
+
+.main-frame img:focus {
+  outline: none;
+}
+
+.raket:hover {
+  cursor: url('./imgs/rsz_1raket.png'), auto;
+  /* width: 30px; */
+}
+
+.bottle:hover {
+  cursor: url('./imgs/bottle.png'), auto;
+  /* width: 30px; */
+}
+
+h1 {
+  text-align: center;
+}
