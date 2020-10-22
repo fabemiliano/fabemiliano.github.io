@@ -4,6 +4,7 @@ import { getMovieInfo, getMovieVideos, getReviews } from '../services/movieApi';
 import { ApplicationContext } from '../context/Context';
 import SideBar from './SideBar';
 import Loading from './Loading';
+import SearchBar from './SearchBar';
 
 function MovieDetails(props) {
   const { props: { match: { params: { id } } } } = props;
@@ -13,10 +14,10 @@ function MovieDetails(props) {
   const { apiType, isLoading, setIsLoading } = useContext(ApplicationContext);
 
   useEffect(() => {
-    getMovieInfo(apiType, id).then(({ title, overview }) => setData({ title, overview }));
+    getMovieInfo(apiType, id).then((result) => setData(result));
     (apiType === 'movie') && getReviews(apiType, id).then((data) => setReviews(data.results));
     getMovieVideos(apiType, id).then(({ results }) => { setVideos(results); setIsLoading(false); });
-    return () => setIsLoading(true);
+    return setIsLoading(true);
   }, []);
 
   function reduceContent(content, url) {
@@ -36,9 +37,8 @@ function MovieDetails(props) {
             <h1>{data.title}</h1>
             <p>{data.overview}</p>
           </div>
-          <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2${data.poster_path}`} alt="" />
         </div>
-        <div>
+        <div className="reviews">
           <h2>Reviews</h2>
           {(reviews.length === 0) && <p>No reviews found</p>}
           {(reviews.length > 0) && reviews.map(({ author, content, url }) => (
@@ -56,20 +56,23 @@ function MovieDetails(props) {
             return sum;
           }, [])}
         </div>
+        <img className="teste2" src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2${data.poster_path}`} alt="" />
       </div>
     );
   }
 
   function renderPeople() {
     return (
-      <div>
-        <div className="main-info">
+      <div className="people-details">
+        <div className="main-info-details">
           <div>
             <h1>{data.name}</h1>
             <h3>{data.birthDay}</h3>
             <p>{data.biography}</p>
+            <p>{`DOB: ${data.birthday}`}</p>
+            <p>{`POB: ${data.place_of_birth}`}</p>
           </div>
-          <img src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2${data.profile_path}`} alt="" />
+          <img className="teste" src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2${data.profile_path}`} alt="" />
         </div>
       </div>
     );
@@ -78,6 +81,7 @@ function MovieDetails(props) {
   return (
     <div className="side-and-main">
       <SideBar />
+      <SearchBar />
       {(isLoading) && <Loading />}
       {(!isLoading) && (
         <div className="movie-details-container">
