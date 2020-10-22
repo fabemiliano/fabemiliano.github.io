@@ -3,14 +3,22 @@
   display: flex;
 }
 
+.all-screen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .search-and-main {
-  width: 80%;
+  width: 100%;
 }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 50px;
 }
 
 .movie-infos {
@@ -20,6 +28,7 @@
   align-items: center;
   margin: 10px 10px;
   width: 100%;
+  position: relative;
 }
 
 .movie-infos p {
@@ -27,6 +36,14 @@
   text-align: center;
   padding: 0;
   margin: 0;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  background: #590995;
+  color: #fff;
+  padding: 5px 0;
+  font-weight: 700;
+  width: 50px;
 }
 
 .movie-infos div {
@@ -42,8 +59,12 @@
   text-align: center;
 }
 
+.movie-infos img {
+  width: 100%
+}
+
 .main-container img {
-  width: 200px;
+  /* width: 200px; */
 }
 
 .video-container {
@@ -59,16 +80,40 @@
   width: 300px;
 }
 
+.movie-details-container div {
+  position: relative;
+  width: 85%;
+}
+.movie-details-container div .teste2 {
+  position: absolute;
+  right: -15%;
+  top: 0;
+  width: 40%
+}
+
 .movie-details-container {
-  width: 80%;
+  margin-top: 10vh;
+  margin-left: 20%;
 }
 
 .main-info {
   display: flex;
+  position: relative;
+}
+
+.main-info p {
+  width: 100%;
+  text-align: justify;
+  font-size: 1.5em;
+}
+
+.main-info img{
+  position: absolute;
+  right: 0;
 }
 
 .main-container a {
-  width: 25%;
+  width: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,7 +124,20 @@
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  margin: 5px auto
+  margin: 5px auto;
+}
+
+.best-infos-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 5px auto;
+  /* background: #c62a88; */
+  padding: 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 900;
 }
 
 .best-infos > p {
@@ -103,4 +161,133 @@
 .inner-text {
   width: 90%;
   text-align: left;
+}
+
+body {
+  background: #03c4a1;
+}
+
+.best-container {
+  margin-top: 10vh;
+  margin-left: 20%;
+}
+
+.main-page {
+  margin-top: 10vh;
+  margin-left: 22%;
+  margin-right: 5%;
+}
+
+.people-container {
+  margin-top: 10vh;
+  margin-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.people-container img {
+  width: 100%;
+}
+
+.people-container a div{
+  display: flex;
+  flex-direction: column;
+}
+
+.people-card {
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.people-card div {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  justify-content: center;
+}
+
+.people-card p {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+.teste {
+  position: absolute;
+  right: -25%;
+  top: 0;
+  width: 40%
+}
+
+.main-info-details {
+  text-align: justify;
+}
+
+.reviews {
+  text-align: justify;
+}
+
+.reviews div {
+  width: 92%
+}
+
+.loading {
+  font-size: 5em;
+  margin: 40vh 40vw;
+}
+
+.loading img {
+  animation: animate 4s linear infinite;
+  filter: drop-shadow(5px 5px 15px rgba(228, 15, 210, 0.9)) hue-rotate(90deg);
+  width: 50vh
+}
+
+.all-screen {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-container a {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-container a {
+    width: 90%;
+    padding-left: 20px;
+  }
+  .genre-selector {
+    margin-left: 20px;
+  }
+  .side-and-main {
+    height: 100vh;
+  }
+  .movie-details-container {
+    width: 80%;
+  }
+
+  .teste2 {
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .main-info p {
+    font-size: 1em;
+  }
+  .main-info {
+    width: 120%
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
 }

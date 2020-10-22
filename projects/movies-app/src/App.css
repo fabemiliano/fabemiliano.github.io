@@ -6,3 +6,7 @@ a, a:visited {
 h3, h4 {
   margin: 0
 }
+
+body {
+  box-sizing: border-box;
+}

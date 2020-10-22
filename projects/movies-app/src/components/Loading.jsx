@@ -1,9 +1,10 @@
 import React from 'react';
+import loader from '../images/loader.png';
 
 function Loading() {
   return (
-    <div>
-      Loading...
+    <div className="loading">
+      <img src={loader} />
     </div>
   );
 }
