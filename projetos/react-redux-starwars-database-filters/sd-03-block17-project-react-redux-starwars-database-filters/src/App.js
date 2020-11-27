@@ -9,7 +9,7 @@ import swlogo from './swlogo.png';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="main">
         <div className="images">
           <img src={deathstar} alt="logo" width="300px" />
           <img src={swlogo} alt="swlogo" width="300px" />
