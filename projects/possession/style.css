@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500;900&display=swap');
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:  Big Shoulders Inline Text;
+  justify-content: space-between;
+  color: white;
+}
+
+.container header {
+  font-size: 5rem;
+}
+
+.line {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 3rem;
+
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: 1px #fff solid;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 40px;
+  font-family:  Big Shoulders Inline Text;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
